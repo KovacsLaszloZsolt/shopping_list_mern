@@ -8,6 +8,6 @@ userRouter.post('/signup', signUp);
 userRouter.post('/signin', signIn);
 userRouter.get('/me', authHandler, getMe);
 userRouter.post('/signout', authHandler, signOut);
-userRouter.post('/update', authHandler, updateMe);
+userRouter.post('/me/update', authHandler, updateMe);
 
 export default userRouter;

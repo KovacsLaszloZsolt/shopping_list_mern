@@ -1,11 +1,10 @@
 import { Request } from 'express';
+import { Document, Model } from 'mongoose';
 
 export interface CustomRequest extends Request {
   token?: string;
   user?: unknown;
 }
-
-import { Document, Model } from 'mongoose';
 
 export interface InToken {
   token: string;
